@@ -3,13 +3,13 @@ import java.util.*;
 
 public class PrimeFactors {
     public  List<Integer> of(int  number) {
-        List<Integer> primeFactorsList = Collections.emptyList();
+        List<Integer> primeFactorsList = new ArrayList<>();
         if(isOne(number))
             return Collections.emptyList();
         return primeFactorsList;
 
     }
-    public Boolean isOne( int number )
+    public boolean isOne(int number)
     {
         return number == 1;
     }
